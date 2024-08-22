@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="856,868.6666666666666" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="856,1045.3333333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -77,7 +77,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="-&gt; Create a bot that takes user input (URL, username, password).&#xA;-&gt; Check if the provided inputs match existing hardcoded values.&#xA;    If incorrect, prompt the user with “Incorrect Inputs, please try again!”  &#xA;-&gt; Otherwise, log the message “Inputs are correct.”&#xA;-&gt; Login to Acme Website: Open a Chrome browser window with the user-provided URL (maximized).&#xA;-&gt; Log in using the provided credentials.&#xA;-&gt; Data Processing&#xA;-&gt; Date extraction from ACME site" DisplayName="Sequence_Main" sap:VirtualizedContainerService.HintSize="416,804" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="-&gt; Create a bot that takes user input (URL, username, password).&#xA;-&gt; Check if the provided inputs match existing hardcoded values.&#xA;    If incorrect, prompt the user with “Incorrect Inputs, please try again!”  &#xA;-&gt; Otherwise, log the message “Inputs are correct.”&#xA;-&gt; Login to Acme Website: Open a Chrome browser window with the user-provided URL (maximized).&#xA;-&gt; Log in using the provided credentials.&#xA;-&gt; Data Processing&#xA;-&gt; Date extraction from ACME site" DisplayName="Sequence_Main" sap:VirtualizedContainerService.HintSize="416,980.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="praneetsingh@gmail.com" Name="DefUserName" />
       <Variable x:TypeArguments="x:String" Default="https://acme-test.uipath.com/login" Name="DefURL" />
@@ -89,6 +89,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log a message." sap:VirtualizedContainerService.HintSize="354,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;2nd Commit (Version control test)&quot;]" />
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="POC3 - Invoke Workflow File (POC3.xaml)" sap:VirtualizedContainerService.HintSize="354,210" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="POC3.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="in_DefUrl">[DefURL]</InArgument>
